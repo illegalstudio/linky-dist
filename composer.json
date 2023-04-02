@@ -1,11 +1,27 @@
 {
-    "name": "laravel/laravel",
+    "name": "illegal/linky-dist",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "Linky is suite of tools for Laravel that makes it easy to create and manage links.",
+    "keywords": [
+        "link",
+        "laravel",
+        "shortner",
+        "url",
+        "short",
+        "shorten",
+        "shortened",
+        "shortening",
+        "shortener",
+        "shortened",
+        "shortened url",
+        "shortened urls",
+        "shortened link",
+        "shortened links"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "illegal/linky": "^0.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
@@ -22,14 +38,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
+            "App\\": "app/"
         }
     },
     "scripts": {

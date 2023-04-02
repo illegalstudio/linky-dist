@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "121ea3a2fffe49b3ef9aa4d064b28c19",
+    "content-hash": "6f5229e98eb164757b72f41c6baf200f",
     "packages": [
         {
             "name": "brick/math",
@@ -982,6 +982,197 @@
             "time": "2021-10-07T12:57:01+00:00"
         },
         {
+            "name": "illegal/insideauth",
+            "version": "v0.2.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illegalstudio/insideauth.git",
+                "reference": "34b27c8d1c15ec8cc7e3480e5d2cb424754982f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illegalstudio/insideauth/zipball/34b27c8d1c15ec8cc7e3480e5d2cb424754982f9",
+                "reference": "34b27c8d1c15ec8cc7e3480e5d2cb424754982f9",
+                "shasum": ""
+            },
+            "require": {
+                "illegal/laravel-utils": "^1.0",
+                "laravel/framework": "^9|^10",
+                "laravel/sanctum": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "laravel/pint": "^1.0",
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/collision": "^6.4",
+                "orchestra/testbench": "^7.22",
+                "pestphp/pest": "^1.22",
+                "pestphp/pest-plugin-laravel": "^1.4",
+                "pestphp/pest-plugin-mock": "^1.0",
+                "phpunit/phpunit": "^9.6",
+                "spatie/laravel-ignition": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Illegal\\InsideAuth\\Providers\\EventServiceProvider",
+                        "Illegal\\InsideAuth\\Providers\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions/insideauth.php"
+                ],
+                "psr-4": {
+                    "Illegal\\InsideAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincenzo Petrucci",
+                    "email": "vincenzo.petrucci@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Laravel InsideAuth is a seamless side authentication solution for Laravel packages.",
+            "support": {
+                "docs": "https://github.com/illegalstudio/insideauth/blob/main/README.md",
+                "issues": "https://github.com/illegalstudio/insideauth/issues",
+                "source": "https://github.com/illegalstudio/insideauth"
+            },
+            "time": "2023-04-02T17:10:05+00:00"
+        },
+        {
+            "name": "illegal/laravel-utils",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illegalstudio/laravel-utils.git",
+                "reference": "32d389f4f8cf5cfd625699baa3a8309d66e25426"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illegalstudio/laravel-utils/zipball/32d389f4f8cf5cfd625699baa3a8309d66e25426",
+                "reference": "32d389f4f8cf5cfd625699baa3a8309d66e25426",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9|^10",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Illegal\\LaravelUtils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincenzo Petrucci",
+                    "email": "vincenzo.petrucci@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Laravel Utils is a collection of useful tools for Laravel.",
+            "support": {
+                "issues": "https://github.com/illegalstudio/laravel-utils/issues",
+                "source": "https://github.com/illegalstudio/laravel-utils/tree/v1.0"
+            },
+            "time": "2023-03-28T21:45:00+00:00"
+        },
+        {
+            "name": "illegal/linky",
+            "version": "v0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illegalstudio/linky.git",
+                "reference": "7349cfe46823cf04affaedf4c27b9d090907f38f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illegalstudio/linky/zipball/7349cfe46823cf04affaedf4c27b9d090907f38f",
+                "reference": "7349cfe46823cf04affaedf4c27b9d090907f38f",
+                "shasum": ""
+            },
+            "require": {
+                "illegal/insideauth": "^0.2",
+                "illegal/laravel-utils": "^1.0",
+                "laravel/framework": "^9.19|^10",
+                "laravel/sanctum": "^3.2",
+                "livewire/livewire": "^2.11",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "laravel/pint": "^1.0",
+                "mockery/mockery": "^1.4.4",
+                "nunomaduro/collision": "^6.4",
+                "orchestra/testbench": "^7.22",
+                "pestphp/pest": "^1.22",
+                "pestphp/pest-plugin-laravel": "^1.4",
+                "pestphp/pest-plugin-mock": "^1.0",
+                "phpunit/phpunit": "^9.6",
+                "spatie/laravel-ignition": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Illegal\\Linky\\ServiceProvider",
+                        "Illegal\\Linky\\RouteServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illegal\\Linky\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincenzo Petrucci",
+                    "email": "vincenzo.petrucci@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Andrea Pavone",
+                    "email": "info@andreapavone.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mircha Emanuel D'Angelo",
+                    "email": "mirchaemanuel@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fabrizio Bosica",
+                    "email": "fabrizio.bosica88@gmail.com",
+                    "role": "Graphic designer"
+                }
+            ],
+            "description": "Linky is a free and open source URL shortener and manager.",
+            "support": {
+                "issues": "https://github.com/illegalstudio/linky/issues",
+                "source": "https://github.com/illegalstudio/linky/tree/v0.2.2"
+            },
+            "time": "2023-04-02T18:11:28+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v10.5.1",
             "source": {
@@ -1708,6 +1899,79 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v2.12.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "019b1e69d8cd8c7e749eba7a38e4fa69ecbc8f74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/019b1e69d8cd8c7e749eba7a38e4fa69ecbc8f74",
+                "reference": "019b1e69d8cd8c7e749eba7a38e4fa69ecbc8f74",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
+                "illuminate/validation": "^7.0|^8.0|^9.0|^10.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^7.2.5|^8.0",
+                "symfony/http-kernel": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^7.0|^8.0|^9.0|^10.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^5.0|^6.0|^7.0|^8.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v2.12.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-03-03T20:12:38+00:00"
         },
         {
             "name": "monolog/monolog",
